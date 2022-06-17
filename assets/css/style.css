@@ -1,0 +1,68 @@
+/* --------------------------------------------------------------------------------------------
+                                        GENERAL
+-------------------------------------------------------------------------------------------- */
+
+:root {
+    /* Colors */
+    --c-primary: #FBA200;
+    --c-secondary: #3F2700;
+    --c-error: #dd3f0e;
+    --c-grey: #525150;
+    --c-dark: #1C1201;
+    --c-light: #FDF5E8;
+
+    /* Font family */
+    /* --ff-name */
+
+    /* Font size */
+    --fs-ratio: 1.2;
+    --fs-s: calc(var(--fs-m) / var(--fs-ratio));
+    --fs-m: 1em;
+    --fs-l: calc(var(--fs-m)* var(--fs-ratio));
+    --fs-xl: calc(var(--fs-l)* var(--fs-ratio));
+    --fs-xxl: calc(var(--fs-xl)* var(--fs-ratio));
+
+    /* Font Family */
+    --ff-nuxt: 'Nexa Rust Slab';
+    --ff-montserrat: 'Montserrat', sans-serif;
+
+    /* Font weight */
+    --fw-regular: 400;
+    --fw-semi_bold: 600;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-m);
+    line-height: 1.45;
+    font-weight: var(--fw-regular);
+    background-color: var(--c-light);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+:is(a, a:hover, button) {
+    text-decoration: none;
+    color: var(--c-dark);
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote {
+    max-width: 80ch;
+}
