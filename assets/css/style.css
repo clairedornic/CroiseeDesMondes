@@ -4,9 +4,8 @@
 
 :root {
     /* Colors */
-    --c-primary: #3163AC;
-    --c-secondary: #5A82BD;
-    --c-light-blue: #9DBAE5;
+    --c-primary: #5A82BD;
+    --c-secondary: #E1E6F8;
     --c-grey: #F8F9FB;
     --c-dark: #000;
     --c-light: #fff;
@@ -17,7 +16,7 @@
     /* Font size */
     --fs-ratio: 1.2;
     --fs-s: calc(var(--fs-m) / var(--fs-ratio));
-    --fs-m: 1em;
+    --fs-m: 1.06em;
     --fs-l: calc(var(--fs-m)* var(--fs-ratio));
     --fs-xl: calc(var(--fs-l)* var(--fs-ratio));
     --fs-xxl: calc(var(--fs-xl)* var(--fs-ratio));
@@ -202,6 +201,7 @@ h1, h2, h3, h4, h5, h6, .btn {
   transition: all 0.2s linear;
   padding: 16px;
   border-radius: 8px;
+  text-transform: uppercase;
 }
 
 .btn:hover {
@@ -224,7 +224,6 @@ h1, h2, h3, h4, h5, h6, .btn {
   color: var(--c-primary);
   background-color:  var(--c-light);
   padding: 16px 32px;
-  text-transform: uppercase;
   font-weight: var(--fw-bold);
 }
 
