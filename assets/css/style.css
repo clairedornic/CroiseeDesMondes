@@ -245,3 +245,13 @@ h1, h2, h3, h4, h5, h6, p, blockquote {
 .home .hero .split-screen-cta {
   width: 80px;
 }
+
+.home .hero .suptitle {
+  font-family: museo-sans-rounded, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.home h1 {
+text-transform: uppercase;
+}
