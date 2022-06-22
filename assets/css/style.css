@@ -139,15 +139,10 @@
 }
 
 html {
-    font-family: var(--ff-montserrat);
+    font-family: var(--ff-poppins);
     font-size: var(--fs-m);
     line-height: 1.45;
     font-weight: var(--fw-regular);
-    background-color: var(--c-light);
-}
-
-body {
-    -webkit-font-smoothing: antialiased;
 }
 
 img, picture, video, canvas, svg {
@@ -157,7 +152,6 @@ img, picture, video, canvas, svg {
 
 :is(a, a:hover, button) {
     text-decoration: none;
-    color: var(--c-dark);
 }
 
 li {
@@ -166,4 +160,88 @@ li {
 
 h1, h2, h3, h4, h5, h6, p, blockquote {
     max-width: 80ch;
+}
+
+/* --------------------------------------------------------------------------------------------
+                                      COMPONENT
+-------------------------------------------------------------------------------------------- */
+
+/* Menu */
+
+.main_menu {
+  position: absolute;
+  padding: 24px;
+  width: 100%;
+}
+
+.main_menu_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+}
+
+.search {
+  position: absolute;
+  right: 0;
+}
+
+/* Buttons */
+
+.btn {
+  font-size: var(--fs-m);
+  font-weight: var(--fw-medium);
+  transition: all 0.2s linear;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  transition: all 0.2s linear;
+}
+
+.btn_blue {
+  color: var(--c-light);
+  background-color: var(--c-primary);
+  border: 1px solid var(--c-primary);
+}
+
+.btn_line_blue {
+  color: var(--c-primary);
+  background-color: transparent;
+  border: 1px solid var(--c-primary);
+}
+
+.btn_white {
+  color: var(--c-primary);
+  background-color:  var(--c-light);
+  padding: 16px 32px;
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+}
+
+/* --------------------------------------------------------------------------------------------
+                                      HOME
+-------------------------------------------------------------------------------------------- */
+
+/* Hero */
+
+.home .hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100vh;
+  background-color: var(--c-grey);
+}
+
+.home .hero .content {
+  width: 100%;
+}
+
+.home .hero .split-screen-cta {
+  width: 80px;
 }
